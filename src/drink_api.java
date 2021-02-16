@@ -44,8 +44,8 @@ public class drink_api {
                 // Parse that object into a usable Java JSON object.
                 JSONObject obj = new JSONObject(content.toString());
                 // Print out the drink recipe.
-                String drinkRecipe = obj.getString("strDrink");
-                System.out.println("The directions to make  " + drinkName + " are ");
+                String drinkRecipe = obj.getString("strInstructions");
+                System.out.println("The directions to make  " + drinkName + " are " + drinkRecipe);
             }
         } catch (Exception ex) {
             System.out.println("Error: " + ex);
